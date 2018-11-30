@@ -6,7 +6,7 @@ A tool that gives you a birds-eye view over sharing settings in Google Drive fol
 
 ![Alt text](public/gdrive-auditor.png?raw=true "Example usage")
 
-In this example, the yellow files and folders are shared with person.a@mydomain.com and person.c@mydomain.com. Folder1 and Folder2 are printed in white and without annotated email addresses, meaning they are not shared with anyone.
+In this example, the yellow files and folders are shared with person.a, person.b and person.c. Folder1 and Folder2 are printed in white and without annotated email addresses, meaning they are not shared with anyone.
 
 ## Setup
 
