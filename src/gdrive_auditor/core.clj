@@ -9,7 +9,7 @@
   (:gen-class))
 
 (def me ((edn/read-string (slurp "config/defaults.edn")) :exclude-user))
-(def creds-file-location "secrets/google-creds.edn")
+(def creds-file-location "config/google-creds.edn")
 
 (defn read-directory
   [creds path]
