@@ -19,9 +19,13 @@ In this example, the yellow files and folders are shared with person.a, person.b
 To give the tool access to your Drive files you need to create an OAuth client ID in Google Cloud and authorize using your user account.
 
 1. Using the Google [Developer's Console](https://console.developers.google.com/)
+
 2. Select an existing project, or create a new one if needed
+
 3. Enable the Google Drive API in the [API Library](https://console.developers.google.com/apis/library)
+
 4. Create a new credential of type "OAth client ID" on the [Credentials page](https://console.developers.google.com/apis/credentials)
+
 5. Using information from the credential, create the file `config/google-creds.edn` using the following template:
 
 ```edn
@@ -31,13 +35,14 @@ To give the tool access to your Drive files you need to create an OAuth client I
  :auth-map {}}
 ```
 
-6. Run the login command
+6. Rename the file `config/example-defaults.edn` to `config/defaults.edn` and add your email address, so that it can be filtered out when visualizing Drive collaborators.
+
+7. Run the login command
 `lein run login`
 
-7. Open the printed URL in a browser and go through the authorization flow
-8. Copy the resulting code and paste it into the terminal, followed by enter. The auth tokens will be automatically written to the `:auth-map` key in the `config/google-creds.edn` file
+8. Open the printed URL in a browser and go through the authorization flow
 
-9. Rename the file `config/example-defaults.edn` to `config/defaults.edn` and add your email address, so that it can be filtered out when visualizing Drive collaborators.
+9. Copy the resulting code and paste it into the terminal, followed by enter. The auth tokens will be automatically written to the `:auth-map` key in the `config/google-creds.edn` file
 
 ## Usage
 
